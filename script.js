@@ -16,7 +16,8 @@ function qrCodeGenerator() {
     var link = `otpauth://totp/SarathTest?issuer=GithubTest&secret=${secretCode}&algorithm=SHA1&digits=6&period=30`;
     console.log(link)
 
-    var qr = qrcode.makeCode(link);
+    qrcode.makeCode(link);
+    document.querySelector('.key').innerHTML = secretCode;
     return link;
 }
 
@@ -66,3 +67,9 @@ function checkToken() {
 }
 
 changeOTP();
+
+document.querySelector('.show').addEventListener('click', function() {
+    var copyKey = document.querySelector('.key');
+    navigator.clipboard.writeText(copyKey.innerHTML);
+    alert("Secret Key is successfully copied. Dont share the secret key with anyone.")
+})

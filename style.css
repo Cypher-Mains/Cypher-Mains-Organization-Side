@@ -9,19 +9,36 @@ body {
     flex-direction: column;
     margin-top: 50px;
 }
+.section {
+    text-align: center;
+}
+.qrcode-div {
+    width: 255px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.qrcode-div p {
+    display: none;
+}
 #qrcode {
     margin-top: 20px;
 }
 .bottom-section {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .bottom-section input {
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid;
 }
-.bottom-section button {
+button {
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid;
+}
+.display-none {
+    display: none;
 }
