@@ -9,6 +9,9 @@ body {
     flex-direction: column;
     margin-top: 50px;
 }
+#qrcode {
+    margin-top: 20px;
+}
 .bottom-section {
     margin-top: 40px;
 }
